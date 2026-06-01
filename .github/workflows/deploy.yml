@@ -37,4 +37,4 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "${{ secrets.MONGODB_PASSWORD}}"
+          echo "..."
