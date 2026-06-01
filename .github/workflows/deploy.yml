@@ -9,8 +9,8 @@ env:
 jobs:
   test:
     env:
-      MONGODB_USERNAME: sat
-      MONGODB_PASSWORD: dsadfsafggdfs
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD}}
       MONGODB_CLUSTER_ADDRESS: cluster0.5hulpyi.mongodb.net
       PORT: 8080
     runs-on: ubuntu-latest
